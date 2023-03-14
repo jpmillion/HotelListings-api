@@ -1,0 +1,5 @@
+2023-03-14 14:43:17.727 -04:00 [INF] Now listening on: https://localhost:7146
+2023-03-14 14:43:17.757 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-14 14:43:17.760 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-14 14:43:17.761 -04:00 [INF] Hosting environment: Development
+2023-03-14 14:43:17.761 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
