@@ -1,0 +1,12 @@
+2023-03-20 18:26:51.836 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-20 18:26:51.872 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-20 18:26:51.873 -04:00 [INF] Hosting environment: Development
+2023-03-20 18:26:51.875 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-20 18:27:19.377 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-20 18:27:21.265 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1890.3582 ms
+2023-03-20 18:28:25.987 -04:00 [INF] HTTP PUT /api/Countries/20 responded 400 in 46.3816 ms
+2023-03-20 18:29:57.103 -04:00 [INF] HTTP PUT /api/Countries/20 responded 400 in 10.3677 ms
+2023-03-20 18:30:25.080 -04:00 [INF] HTTP PUT /api/Countries/4 responded 204 in 82.3642 ms
+2023-03-20 18:30:55.528 -04:00 [INF] HTTP GET /api/Countries responded 200 in 47.0646 ms
+2023-03-20 18:35:55.066 -04:00 [INF] HTTP DELETE /api/Countries/4 responded 204 in 102.8082 ms
+2023-03-20 18:36:12.087 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1.9010 ms

@@ -48,7 +48,7 @@ namespace HotelListingsApi.Controllers
         {
             if (id != country.Id)
             {
-                return BadRequest();
+                return BadRequest("Request id doesn't match country id");
             }
 
             _context.Entry(country).State = EntityState.Modified;
