@@ -26,26 +26,28 @@ namespace HotelListingsApi.Controllers
 
         // GET: api/Countries
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GetCountryResponse>>> GetCountries()
+        public async Task<ActionResult<IEnumerable<GetCountiesResponseDto>>> GetCountries()
         {
             List<Country> countries = await _context.Countries.ToListAsync();
-            List<GetCountryResponse> countriesResponseList = _mapper.Map<List<GetCountryResponse>>(countries);
+            List<GetCountiesResponseDto> countriesResponseList = _mapper.Map<List<GetCountiesResponseDto>>(countries);
 
             return Ok(countriesResponseList);
         }
 
         // GET: api/Countries/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Country>> GetCountry(int id)
+        public async Task<ActionResult<GetCountryByIdResponseDto>> GetCountry(int id)
         {
-            var country = await _context.Countries.FindAsync(id);
+            var country = await _context.Countries.Include(c => c.Hotels).FirstOrDefaultAsync(c => c.Id == id);
 
             if (country == null)
             {
                 return NotFound();
             }
 
-            return country;
+            GetCountryByIdResponseDto countryDto = _mapper.Map<GetCountryByIdResponseDto>(country);
+
+            return Ok(countryDto);
         }
 
         // PUT: api/Countries/5
@@ -82,7 +84,7 @@ namespace HotelListingsApi.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(CreateCountryRequest createCountryDto)
+        public async Task<ActionResult<Country>> PostCountry(CreateCountryRequestDto createCountryDto)
         {
             Country country = _mapper.Map<Country>(createCountryDto);
 
