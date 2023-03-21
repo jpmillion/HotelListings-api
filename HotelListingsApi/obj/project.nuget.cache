@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pkVBREtz+GW3LdIOxgc9wDCuGPhyMosn5rbKJX8UsflbSTC674zkH8J7h7z5+2NcuzRBMrkjO57bjuHsFTXW1Q==",
+  "dgSpecHash": "qMvyLW6hL3J5inGtiHLgrj39+PO9/JD4AcaC95NIofZUvjzGu2vK5qb+94PCC8NUw2VDLUHvwctFapLJLH2Axg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jpmil\\source\\repos\\HotelListingsApi\\HotelListingsApi\\HotelListingsApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\jpmil\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\jpmil\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\jpmil\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jpmil\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\jpmil\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
