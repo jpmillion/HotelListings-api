@@ -2,10 +2,7 @@
 
 namespace HotelListingsApi.Dto.Country
 {
-    public class CreateCountryRequestDto
+    public class CreateCountryRequestDto : BaseCountryDto
     {
-        [Required]
-        public string Name { get; set; }
-        public string ShortName { get; set; }
     }
 }

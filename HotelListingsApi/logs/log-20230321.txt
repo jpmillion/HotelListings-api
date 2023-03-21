@@ -21,3 +21,13 @@
 2023-03-21 10:49:21.681 -04:00 [WRN] Failed to determine the https port for redirect.
 2023-03-21 10:49:23.459 -04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 1779.5762 ms
 2023-03-21 10:50:17.638 -04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 35.6118 ms
+2023-03-21 11:25:00.865 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-21 11:25:00.887 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 11:25:00.890 -04:00 [INF] Hosting environment: Development
+2023-03-21 11:25:00.890 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-21 11:27:11.691 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-21 11:27:13.623 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1933.3549 ms
+2023-03-21 11:27:59.706 -04:00 [INF] HTTP PUT /api/Countries/5 responded 204 in 172.5985 ms
+2023-03-21 11:28:05.793 -04:00 [INF] HTTP GET /api/Countries responded 200 in 45.2295 ms
+2023-03-21 11:28:20.858 -04:00 [INF] HTTP PUT /api/Countries/5 responded 204 in 20.1527 ms
+2023-03-21 11:28:24.060 -04:00 [INF] HTTP GET /api/Countries responded 200 in 4.6554 ms
