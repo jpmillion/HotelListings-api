@@ -1,0 +1,23 @@
+2023-03-21 07:53:30.944 -04:00 [INF] Application is shutting down...
+2023-03-21 09:05:53.037 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-21 09:05:53.069 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 09:05:53.071 -04:00 [INF] Hosting environment: Development
+2023-03-21 09:05:53.071 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-21 09:06:04.844 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-21 09:06:06.435 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1591.8008 ms
+2023-03-21 09:06:33.376 -04:00 [INF] HTTP POST /api/Countries responded 400 in 38.6269 ms
+2023-03-21 09:07:10.044 -04:00 [INF] HTTP POST /api/Countries responded 201 in 139.1997 ms
+2023-03-21 09:07:18.937 -04:00 [INF] HTTP GET /api/Countries responded 200 in 42.8072 ms
+2023-03-21 10:22:40.119 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-21 10:22:40.144 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 10:22:40.145 -04:00 [INF] Hosting environment: Development
+2023-03-21 10:22:40.146 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-21 10:23:04.856 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-21 10:23:06.577 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1721.6575 ms
+2023-03-21 10:48:09.362 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-21 10:48:09.385 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-21 10:48:09.387 -04:00 [INF] Hosting environment: Development
+2023-03-21 10:48:09.388 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-21 10:49:21.681 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-21 10:49:23.459 -04:00 [INF] HTTP GET /api/Countries/5 responded 200 in 1779.5762 ms
+2023-03-21 10:50:17.638 -04:00 [INF] HTTP GET /api/Countries/1 responded 200 in 35.6118 ms
