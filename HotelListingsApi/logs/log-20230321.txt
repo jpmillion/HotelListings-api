@@ -31,3 +31,4 @@
 2023-03-21 11:28:05.793 -04:00 [INF] HTTP GET /api/Countries responded 200 in 45.2295 ms
 2023-03-21 11:28:20.858 -04:00 [INF] HTTP PUT /api/Countries/5 responded 204 in 20.1527 ms
 2023-03-21 11:28:24.060 -04:00 [INF] HTTP GET /api/Countries responded 200 in 4.6554 ms
+2023-03-21 15:23:29.665 -04:00 [INF] Application is shutting down...
