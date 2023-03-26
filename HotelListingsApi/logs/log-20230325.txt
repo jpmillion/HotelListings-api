@@ -11,3 +11,48 @@
 2023-03-25 15:17:33.027 -04:00 [INF] HTTP DELETE /api/Countries/6 responded 204 in 21.5405 ms
 2023-03-25 15:17:43.077 -04:00 [INF] HTTP GET /api/Countries responded 200 in 2.2437 ms
 2023-03-25 15:17:59.168 -04:00 [INF] Application is shutting down...
+2023-03-25 18:52:44.641 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-25 18:52:44.684 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-25 18:52:44.685 -04:00 [INF] Hosting environment: Development
+2023-03-25 18:52:44.687 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-25 18:55:31.293 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-25 18:55:31.315 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-25 18:55:31.316 -04:00 [INF] Hosting environment: Development
+2023-03-25 18:55:31.316 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-25 18:55:56.111 -04:00 [INF] Application is shutting down...
+2023-03-25 19:26:39.097 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-25 19:26:39.130 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-25 19:26:39.132 -04:00 [INF] Hosting environment: Development
+2023-03-25 19:26:39.133 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-25 19:32:22.111 -04:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/Hotels" for actions - HotelListingsApi.Controllers.HotelsController.AddHotel (HotelListingsApi),HotelListingsApi.Controllers.HotelsController.AddHotel (HotelListingsApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-03-25 19:32:54.193 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-25 19:32:54.219 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-25 19:32:54.221 -04:00 [INF] Hosting environment: Development
+2023-03-25 19:32:54.222 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-25 19:37:03.169 -04:00 [INF] Application is shutting down...
+2023-03-25 20:11:49.205 -04:00 [INF] Now listening on: http://localhost:5117
+2023-03-25 20:11:49.234 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-25 20:11:49.235 -04:00 [INF] Hosting environment: Development
+2023-03-25 20:11:49.236 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-03-25 20:12:12.575 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-03-25 20:12:14.245 -04:00 [INF] HTTP GET /api/Hotels responded 200 in 1670.5151 ms
+2023-03-25 20:13:19.034 -04:00 [INF] HTTP POST /api/Hotels responded 201 in 205.1648 ms
+2023-03-25 20:13:36.912 -04:00 [INF] HTTP GET /api/Hotels responded 200 in 14.1400 ms
+2023-03-25 20:14:03.381 -04:00 [INF] HTTP GET /api/Hotels/1 responded 200 in 64.6871 ms
+2023-03-25 20:14:22.650 -04:00 [INF] HTTP GET /api/Hotels/4 responded 200 in 5.7783 ms
+2023-03-25 20:15:05.626 -04:00 [INF] HTTP PUT /api/Hotels/3 responded 400 in 22.1926 ms
+2023-03-25 20:16:14.745 -04:00 [INF] HTTP PUT /api/Hotels/3 responded 400 in 1.3457 ms
+2023-03-25 20:16:32.773 -04:00 [INF] HTTP PUT /api/Hotels/3 responded 400 in 1.0761 ms
+2023-03-25 20:16:50.903 -04:00 [INF] HTTP PUT /api/Hotels/3 responded 204 in 17.2532 ms
+2023-03-25 20:17:02.034 -04:00 [INF] HTTP GET /api/Hotels responded 200 in 2.2780 ms
+2023-03-25 20:17:30.201 -04:00 [INF] HTTP DELETE /api/Hotels/3 responded 204 in 36.8083 ms
+2023-03-25 20:17:37.525 -04:00 [INF] HTTP GET /api/Hotels responded 200 in 1.6701 ms
+2023-03-25 20:17:59.081 -04:00 [INF] Application is shutting down...
