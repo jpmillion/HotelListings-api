@@ -294,3 +294,4 @@ C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi\bin\Debug\net7.0\M
 C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
