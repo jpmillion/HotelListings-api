@@ -1,0 +1,10 @@
+2023-05-06 19:56:45.804 -04:00 [INF] Now listening on: http://localhost:5117
+2023-05-06 19:56:45.835 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-06 19:56:45.837 -04:00 [INF] Hosting environment: Development
+2023-05-06 19:56:45.838 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-05-06 20:01:50.318 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-06 20:01:50.579 -04:00 [INF] HTTP POST /api/Account/register responded 400 in 262.5634 ms
+2023-05-06 20:02:32.633 -04:00 [INF] HTTP POST /api/Account/register responded 200 in 1968.5685 ms
+2023-05-06 20:02:58.120 -04:00 [INF] HTTP POST /api/Account/register responded 400 in 105.2817 ms
+2023-05-06 20:03:13.582 -04:00 [INF] HTTP POST /api/Account/register responded 200 in 84.1021 ms
+2023-05-06 20:03:59.584 -04:00 [INF] Application is shutting down...

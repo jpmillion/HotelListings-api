@@ -1,0 +1,33 @@
+2023-05-08 10:42:36.035 -04:00 [INF] Now listening on: http://localhost:5117
+2023-05-08 10:42:36.064 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 10:42:36.064 -04:00 [INF] Hosting environment: Development
+2023-05-08 10:42:36.065 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-05-08 10:43:43.328 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-08 10:43:45.257 -04:00 [INF] HTTP POST /api/Account/login responded 401 in 1930.5056 ms
+2023-05-08 10:44:32.840 -04:00 [INF] HTTP POST /api/Account/register responded 200 in 293.9002 ms
+2023-05-08 10:44:58.329 -04:00 [INF] HTTP POST /api/Account/login responded 200 in 213.9777 ms
+2023-05-08 10:48:39.808 -04:00 [INF] Application is shutting down...
+2023-05-08 12:54:05.419 -04:00 [INF] Now listening on: http://localhost:5117
+2023-05-08 12:54:05.446 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 12:54:05.447 -04:00 [INF] Hosting environment: Development
+2023-05-08 12:54:05.448 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-05-08 12:54:17.446 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-08 12:54:19.108 -04:00 [INF] HTTP GET /api/Countries responded 200 in 1662.5841 ms
+2023-05-08 12:54:46.361 -04:00 [INF] HTTP DELETE /api/Countries/1 responded 401 in 20.6977 ms
+2023-05-08 12:59:04.259 -04:00 [INF] HTTP POST /api/Countries responded 401 in 3.1387 ms
+2023-05-08 13:00:55.333 -04:00 [INF] HTTP POST /api/Account/login responded 200 in 382.6804 ms
+2023-05-08 13:01:53.027 -04:00 [INF] HTTP POST /api/Countries responded 201 in 166.7640 ms
+2023-05-08 13:02:20.978 -04:00 [INF] HTTP POST /api/Countries responded 401 in 0.1814 ms
+2023-05-08 13:02:27.579 -04:00 [INF] HTTP POST /api/Countries responded 201 in 19.6953 ms
+2023-05-08 13:02:52.392 -04:00 [INF] HTTP DELETE /api/Countries/8 responded 204 in 51.2477 ms
+2023-05-08 13:03:11.854 -04:00 [INF] HTTP GET /api/Countries responded 200 in 17.5824 ms
+2023-05-08 13:06:46.085 -04:00 [INF] HTTP DELETE /api/Countries/7 responded 403 in 12.9284 ms
+2023-05-08 15:23:43.145 -04:00 [INF] Application is shutting down...
+2023-05-08 15:25:10.225 -04:00 [INF] Now listening on: http://localhost:5117
+2023-05-08 15:25:10.255 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 15:25:10.256 -04:00 [INF] Hosting environment: Development
+2023-05-08 15:25:10.256 -04:00 [INF] Content root path: C:\Users\jpmil\source\repos\HotelListingsApi\HotelListingsApi
+2023-05-08 15:26:03.254 -04:00 [WRN] Failed to determine the https port for redirect.
+2023-05-08 15:26:05.460 -04:00 [INF] HTTP POST /api/Account/login responded 200 in 2207.9306 ms
+2023-05-08 15:26:40.078 -04:00 [INF] HTTP POST /api/Account/refreshtoken responded 200 in 101.9350 ms
+2023-05-08 15:27:20.441 -04:00 [INF] Application is shutting down...
