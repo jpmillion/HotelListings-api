@@ -10,10 +10,12 @@ namespace HotelListingsApi.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly ILogger<AccountController> _logger;
         private readonly IAuthManager _authManager;
 
-        public AccountController(IAuthManager auth) 
+        public AccountController(IAuthManager auth, ILogger<AccountController> logger) 
         {
+            _logger = logger;
             _authManager = auth;
         }
 
@@ -24,18 +26,27 @@ namespace HotelListingsApi.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> Register([FromBody] ApiUserDto userDto)
         {
+            _logger.LogInformation($"Registration Attempt for {userDto.Email}");
             IEnumerable<IdentityError> errors = await _authManager.Register(userDto);
 
-            if (errors.Any()) 
+            try
             {
-                foreach (var error in errors)
+                if (errors.Any())
                 {
-                    ModelState.AddModelError(error.Code, error.Description);
+                    foreach (var error in errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+                    return BadRequest(ModelState);
                 }
-                return BadRequest(ModelState);
-            }
 
-            return Ok();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, $"Something went wrong in the {nameof(Register)} - User Registration attempt for {userDto.Email}");
+                return Problem($"Something went wrong in the {nameof(Register)}", statusCode: 500);
+            }
         }
 
         [HttpPost]
@@ -45,14 +56,23 @@ namespace HotelListingsApi.Controllers
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> Login([FromBody] LoginDto login)
         {
-            AuthResponseDto authResponseDto = await _authManager.Login(login);
-
-            if (authResponseDto == null)
+            _logger.LogInformation($"{login.Email} attempting to login in");
+            try
             {
-                return Unauthorized();
-            }
+                AuthResponseDto authResponseDto = await _authManager.Login(login);
 
-            return Ok(authResponseDto);
+                if (authResponseDto == null)
+                {
+                    return Unauthorized();
+                }
+
+                return Ok(authResponseDto);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"{login.Email} Failed to login: {ex.Message}");
+                return Problem($"Login failed", statusCode: 500);
+            }
         }
 
         [HttpPost]
