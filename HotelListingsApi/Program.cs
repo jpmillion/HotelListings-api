@@ -1,6 +1,7 @@
 using HotelListingsApi.Configurations;
 using HotelListingsApi.Contracts;
 using HotelListingsApi.Data;
+using HotelListingsApi.Middleware;
 using HotelListingsApi.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -73,6 +74,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseSerilogRequestLogging();
 

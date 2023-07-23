@@ -29,24 +29,16 @@ namespace HotelListingsApi.Controllers
             _logger.LogInformation($"Registration Attempt for {userDto.Email}");
             IEnumerable<IdentityError> errors = await _authManager.Register(userDto);
 
-            try
+            if (errors.Any())
             {
-                if (errors.Any())
+                foreach (var error in errors)
                 {
-                    foreach (var error in errors)
-                    {
-                        ModelState.AddModelError(error.Code, error.Description);
-                    }
-                    return BadRequest(ModelState);
+                    ModelState.AddModelError(error.Code, error.Description);
                 }
+                return BadRequest(ModelState);
+            }
 
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Something went wrong in the {nameof(Register)} - User Registration attempt for {userDto.Email}");
-                return Problem($"Something went wrong in the {nameof(Register)}", statusCode: 500);
-            }
+            return Ok();
         }
 
         [HttpPost]
@@ -57,22 +49,16 @@ namespace HotelListingsApi.Controllers
         public async Task<ActionResult> Login([FromBody] LoginDto login)
         {
             _logger.LogInformation($"{login.Email} attempting to login in");
-            try
-            {
-                AuthResponseDto authResponseDto = await _authManager.Login(login);
+   
+            AuthResponseDto authResponseDto = await _authManager.Login(login);
 
-                if (authResponseDto == null)
-                {
-                    return Unauthorized();
-                }
-
-                return Ok(authResponseDto);
-            }
-            catch (Exception ex)
+            if (authResponseDto == null)
             {
-                _logger.LogError($"{login.Email} Failed to login: {ex.Message}");
-                return Problem($"Login failed", statusCode: 500);
+               return Unauthorized();
             }
+
+            return Ok(authResponseDto);
+   
         }
 
         [HttpPost]
